@@ -31,6 +31,7 @@ url: "https://steampunkdigital.github.io" # the base hostname & protocol for you
 # twitter_username: jekyllrb
 # github_username:  jekyll
 logo: title_e.png
+github: [metadata]
 
 # Build settings
 theme: jekyll-theme-minimal
