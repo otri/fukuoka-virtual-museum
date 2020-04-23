@@ -37,7 +37,7 @@ var delayCreateScene = function () {
     // https://youtu.be/cLqK9vgTKBw
     // https://playground.babylonjs.com/#5Y2GIC#38
 
-    BABYLON.SceneLoader.Append("", "{{ page.glb | relative_url }}", scene, function (newMeshes) {
+    BABYLON.SceneLoader.Append("{{ page.glb | relative_url }}", null, scene, function (newMeshes) {
         scene.createDefaultCameraOrLight(true);
         scene.activeCamera.attachControl(canvas, false);
         scene.activeCamera.alpha += Math.PI; // camera +180°
