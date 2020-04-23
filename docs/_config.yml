@@ -58,6 +58,7 @@ plugins:
   - jekyll-include-cache
 
 author:
+  name : "Fukuoka City Museum"
   avatar : "/assets/images/title.png"
   bio    : "Welcome to the Fukuoka City Virutal Museum.   Please enjoy the AR digital experience on iPhone or Android, in Virtual Reality on Windows or Oculus Quest."
   links:

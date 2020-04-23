@@ -6,8 +6,12 @@ Development Preparation
 
 Following tutorials in:
 
-* [Minimal Mistakes Jekyll theme](https://github.com/mmistakes/minimal-mistakes)
+* [Minimal Mistakes Quickstart Guide](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/)
 * [Minimal Mistakes Theme - Overriding Theme Defaults](https://mmistakes.github.io/minimal-mistakes/docs/overriding-theme-defaults/)
+
+Also, somewhat old references:
+
+* [Minimal Mistakes Jekyll theme](https://github.com/mmistakes/minimal-mistakes)
 * [Making Jekyll multilingual](https://www.sylvaindurand.org/making-jekyll-multilingual/)
 * [Setting up a GitHub Pages site with Jekyll](https://help.github.com/en/github/working-with-github-pages/setting-up-a-github-pages-site-with-jekyll)
 
