@@ -3,12 +3,12 @@ layout: modelviewer
 title:  "Model1"
 date:   2020-04-23 21:22:35 +0900
 categories: monocle photogrammetry
-poster: Model1.jpg
-glb: Model1.glb
-usdz: Model1.usdz
+poster: /assets/models/Model1.jpg
+glb: /assets/models/Model1.glb
+usdz: /assets/models/Model1.usdz
 ---
 <a id="arLink" rel="ar">
-![image-left](/assets/models/{{ page.poster }}){: .align-left}
+![image-left]({{ page.poster | relative_url }}){: .align-left}
 </a>
 A leasurely lady looking onward.  150 years old, porcelain.
 
@@ -24,7 +24,7 @@ var isARAvailable = function() {
 var delayCreateScene = function () {
   if(isARAvailable()) {
     var arLink = document.getElementById('arLink');
-    arLink.setAttribute("href","/assets/models/{{ page.usdz }}");
+    arLink.setAttribute("href","{{ page.usdz | relative_url }}");
   } else {
     var canvas = document.getElementById('renderCanvas');
     canvas.style.display = 'inline';
@@ -37,7 +37,7 @@ var delayCreateScene = function () {
     // https://youtu.be/cLqK9vgTKBw
     // https://playground.babylonjs.com/#5Y2GIC#38
 
-    BABYLON.SceneLoader.Append("/assets/models/", "{{ page.glb }}", scene, function (newMeshes) {
+    BABYLON.SceneLoader.Append("", "{{ page.glb | relative_url }}", scene, function (newMeshes) {
         scene.createDefaultCameraOrLight(true);
         scene.activeCamera.attachControl(canvas, false);
         scene.activeCamera.alpha += Math.PI; // camera +180°
