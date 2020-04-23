@@ -6,10 +6,9 @@ Development Preparation
 
 Following tutorials in:
 
-* [Static website
-with Jekyll](https://www.sylvaindurand.org/static-website-with-jekyll/)
+* [Static website with Jekyll](https://www.sylvaindurand.org/static-website-with-jekyll/)
 * [Making Jekyll multilingual](https://www.sylvaindurand.org/making-jekyll-multilingual/)
-* [Using Github to serve Jekyll](https://www.sylvaindurand.org/using-github-to-serve-jekyll/)
+* [Setting up a GitHub Pages site with Jekyll](https://help.github.com/en/github/working-with-github-pages/setting-up-a-github-pages-site-with-jekyll)
 
 Install Jekyll
 --------------
@@ -21,5 +20,19 @@ Run Local Server
 ----------------
 ```
 jekyll serve -w
+or
+bundle exec jekyll serve
 ```
 
+References
+==========
+
+* [Babylon.js](https://www.babylonjs.com/)
+* [Babylon Sandbox](https://sandbox.babylonjs.com/)
+* [Babylon WebXR](https://doc.babylonjs.com/how_to/introduction_to_webxr)
+* [Viewing AR Assets in Safari for iOS](https://webkit.org/blog/8421/viewing-augmented-reality-assets-in-safari-for-ios/)
+
+Competition and Inspiration
+---------------------------
+
+* [Tokyo - National Museum of Nature and Science](https://www.kahaku.go.jp/VR/)
