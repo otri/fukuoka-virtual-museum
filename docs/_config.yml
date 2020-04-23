@@ -18,8 +18,6 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-source: source
-destination: docs
 timezone: JP
 
 title: Fukuoka Museum Virtual Gallery by Steampunk Digital
@@ -32,6 +30,7 @@ baseurl: "/fukuoka-virtual-museum" # the subpath of your site, e.g. /blog
 url: "https://steampunkdigital.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 # github_username:  jekyll
+logo: title_e.png
 
 # Build settings
 theme: jekyll-theme-minimal
