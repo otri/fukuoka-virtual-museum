@@ -15,10 +15,10 @@ Also, somewhat old references:
 * [Making Jekyll multilingual](https://www.sylvaindurand.org/making-jekyll-multilingual/)
 * [Setting up a GitHub Pages site with Jekyll](https://help.github.com/en/github/working-with-github-pages/setting-up-a-github-pages-site-with-jekyll)
 
-Install Jekyll
+Install Jekyll and Bundler
 --------------
 ```
-gem install jekyll
+sudo gem install bundler jekyll
 ```
 
 Run Local Server
