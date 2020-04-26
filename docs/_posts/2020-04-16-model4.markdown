@@ -1,0 +1,10 @@
+---
+layout: modelviewer
+title:  "Model4"
+date:   2020-04-16 13:11:36 +0900
+categories: monocle photogrammetry
+poster: /assets/models/Model4.jpg
+glb: /assets/models/Model4.glb
+usdz: /assets/models/Model4.usdz
+---
+Little clay dog.

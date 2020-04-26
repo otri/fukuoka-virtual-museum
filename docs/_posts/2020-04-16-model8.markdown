@@ -1,0 +1,10 @@
+---
+layout: modelviewer
+title:  "Model8"
+date:   2020-04-16 14:36:28 +0900
+categories: monocle photogrammetry
+poster: /assets/models/Model8.jpg
+glb: /assets/models/Model8.glb
+usdz: /assets/models/Model8.usdz
+---
+Samaurai armour.

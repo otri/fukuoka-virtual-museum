@@ -1,0 +1,10 @@
+---
+layout: modelviewer
+title:  "Model7"
+date:   2020-04-16 14:06:30 +0900
+categories: monocle photogrammetry
+poster: /assets/models/Model7.jpg
+glb: /assets/models/Model7.glb
+usdz: /assets/models/Model7.usdz
+---
+Samaurai armour.

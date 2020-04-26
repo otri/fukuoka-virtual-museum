@@ -1,0 +1,10 @@
+---
+layout: modelviewer
+title:  "Model10"
+date:   2020-04-16 15:53:11 +0900
+categories: monocle photogrammetry
+poster: /assets/models/Model10.jpg
+glb: /assets/models/Model10.glb
+usdz: /assets/models/Model10.usdz
+---
+Samaurai helmet.

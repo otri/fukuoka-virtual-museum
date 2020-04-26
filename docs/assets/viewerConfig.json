@@ -1,0 +1,9 @@
+{
+    "templates": {
+        "navBar": {
+            "params": {
+                "hideVr": false
+            }
+        }
+    }
+}

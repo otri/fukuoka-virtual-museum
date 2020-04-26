@@ -24,8 +24,6 @@ sudo gem install bundler jekyll
 Run Local Server
 ----------------
 ```
-jekyll serve -w
-or
 bundle exec jekyll serve
 ```
 
