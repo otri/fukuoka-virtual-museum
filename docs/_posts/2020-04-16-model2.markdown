@@ -1,10 +1,20 @@
 ---
 layout: modelviewer
-title:  "Model2"
+title:  "丁子風炉"
 date:   2020-04-16 11:09:16 +0900
 categories: monocle photogrammetry
 poster: /assets/models/Model2.jpg
 glb: /assets/models/Model2.glb
 usdz: /assets/models/Model2.usdz
 ---
-A very old scent pot.
+作者：正木宗七（まさき・そうしち）
+
+生薬や香辛料として使われる丁子（グローブ）を加熱して香りを発散させる香炉の一種です。
+
+正木家は，播磨（現・兵庫県）の出身の瓦師で，黒田長政に従って博多にやってきたと伝えられています。本家は代々瓦師でしたが，分家が釉薬をかけない素焼きの焼き物をつくりはじめ，代々「宗七」を名乗って，明治維新の頃まで6代続きました。彼らがつくっていた素焼き物が「宗七焼」です。
+
+`資料関連リンク`
+
+[幻のやきもの「宗七焼」（平成28年10月25日～12月18日）（福岡市博物館ホームページ）](http://museum.city.fukuoka.jp/archives/leaflet/480/index.html)
+
+[宗七焼（平成11年11月30日～平成12年2月6日）（福岡市博物館ホームページ）](http://museum.city.fukuoka.jp/archives/leaflet/155/index.html)

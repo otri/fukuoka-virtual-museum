@@ -1,10 +1,24 @@
 ---
 layout: modelviewer
-title:  "Model9"
+title:  "黒漆塗桃形大水牛脇立兜"
 date:   2020-04-16 15:31:15 +0900
 categories: monocle photogrammetry
 poster: /assets/models/Model9.jpg
 glb: /assets/models/Model9.glb
 usdz: /assets/models/Model9.usdz
 ---
-Samaurai helmet.
+福岡藩の初代藩主・黒田長政（1568～1623）の兜です。兜の両脇の金色の角は，水牛の角をかたどっています。長政の兜として有名な「一の谷兜」とともに，重要文化財に指定されています。
+
+兜の本体，ヘルメットの部分が桃の形ににているので「桃形」兜と呼ばれます。
+
+
+*大福岡城展（10月8日～11月29日）で展示予定
+
+
+`資料関連リンク`
+
+[甲冑にみる江戸時代展2　大水牛と桃形の系譜（平成16年7月21日～9月20日）（福岡市博物館ホームページ）](http://museum.city.fukuoka.jp/archives/leaflet/246/index.html)
+
+[変わり兜展（平成8年3月26日～5月26日）（福岡市博物館ホームページ）](http://museum.city.fukuoka.jp/archives/leaflet/092/index.html)
+
+[藤と餅─黒田家家紋もものがたり─（平成26年4月15日～6月15日）（福岡市博物館ホームページ）](http://museum.city.fukuoka.jp/archives/leaflet/428/index.html)

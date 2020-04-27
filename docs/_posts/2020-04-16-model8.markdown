@@ -1,10 +1,17 @@
 ---
 layout: modelviewer
-title:  "Model8"
+title:  "鉄錆地桃形鬼面前立兜・紺糸威胴丸具足"
 date:   2020-04-16 14:36:28 +0900
 categories: monocle photogrammetry
 poster: /assets/models/Model8.jpg
 glb: /assets/models/Model8.glb
 usdz: /assets/models/Model8.usdz
 ---
-Samaurai armour.
+福岡藩主だった黒田家の陪臣（家臣の家臣）の家に伝えられた鎧兜です。戦国時代（16世紀）のものだと考えられます。
+
+兜の上には，鬼瓦を形どった飾りがついています。鬼瓦は，魔よけとして屋根の棟の両端に掲げられました。魔物を退けるために恐ろしい鬼の顔になっています。戦場で，敵を威嚇し，自らを守る「護符」となってくれることも願ったデザインなのかもしれません。
+
+
+`資料関連リンク`
+
+[甲冑に見る江戸時代展3─福岡藩家老と支藩の家臣たち─（平成26年4月1日～6月1日）（福岡市博物館ホームページ）](http://museum.city.fukuoka.jp/archives/leaflet/427/index.html)

@@ -1,10 +1,24 @@
 ---
 layout: modelviewer
-title:  "Model4"
+title:  "博多遺跡群出土　白磁イヌ"
 date:   2020-04-16 13:11:36 +0900
 categories: monocle photogrammetry
 poster: /assets/models/Model4.jpg
 glb: /assets/models/Model4.glb
 usdz: /assets/models/Model4.usdz
 ---
-Little clay dog.
+冷泉町（福岡市博多区）で発掘された，手のひらサイズの小さな白磁のイヌです。鎌倉時代（13世紀）に中国から輸入されたものだと考えられます。
+
+博多遺跡群で発掘されたほかの出土品と一緒に重要文化財に指定されています。
+
+博多では，多くの中国でつくられた陶磁器が発掘されています。
+
+
+*福岡市埋蔵文化財センター所蔵資料
+
+*福岡市博物館・常設展示室で展示中
+
+
+`資料関連リンク`
+
+[博多を掘る（平成19年9月4日～平成20年1月14日）（福岡市博物館ホームページ）](http://museum.city.fukuoka.jp/archives/leaflet/305/index.html)

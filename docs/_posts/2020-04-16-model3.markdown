@@ -1,10 +1,12 @@
 ---
 layout: modelviewer
-title:  "Model3"
+title:  "木造東照権現坐像"
 date:   2020-04-16 11:30:20 +0900
 categories: monocle photogrammetry
 poster: /assets/models/Model3.jpg
 glb: /assets/models/Model3.glb
 usdz: /assets/models/Model3.usdz
 ---
-Samarai sitting with sword and fan.
+江戸時代，現在の西公園（福岡市中央区）にあった東照宮の御神体だった東照権現＝徳川家康の木像です。1652年に，江戸・寛永寺で開眼，福岡に船で運ばれてきたそうです。明治時代に東照宮が廃されたあと，警固神社（福岡市中央区）に移されました。
+
+この像は，公家の男性の正装である「束帯」という装束を身に着けています。一番上にまとっている黒い袍（ほう）には，よく見ると，徳川家の家紋・三つ葉葵の文様が描かれています。ぜひ，ズームインしてご覧ください。

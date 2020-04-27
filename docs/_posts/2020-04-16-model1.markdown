@@ -1,10 +1,24 @@
 ---
 layout: modelviewer
-title:  "Model1"
+title:  "博多人形「初袷」（はつあわせ）"
 date:   2020-04-16 10:47:51 +0900
 categories: monocle photogrammetry
 poster: /assets/models/Model1.jpg
 glb: /assets/models/Model1.glb
 usdz: /assets/models/Model1.usdz
 ---
-A leasurely lady looking onward.  150 years old, porcelain.
+制作年代：大正3年（1914）
+
+※3D画像は画像をクリックすると見ることができます（外部リンク）
+
+名人と名高い人形師・小島與一がつくった博多人形です。
+
+この作品のモデルになったのは，修業時代の若き日の與一が憧れていた博多芸妓です。與一は彼女を料亭の2階に連れ出して，3日間デッサンに打ち込み，この作品を完成させたと伝えられています。この女性・ひろ子は，のちに與一の妻となりました。
+
+`資料関連リンク`
+
+[博多人形名品展2　小島与一と原田嘉平（平成23年9月21日～11月6日）（福岡市博物館ホームページ）](http://museum.city.fukuoka.jp/archives/leaflet/396/index.html)
+
+[博多人形展（平成12年3月28日～7月30日）（福岡市博物館ホームページ）](http://museum.city.fukuoka.jp/archives/leaflet/161/index.html)
+
+[博多人形展（平成12年3月28日～7月30日）（福岡市博物館ホームページ）](http://museum.city.fukuoka.jp/archives/leaflet/542/index.html)

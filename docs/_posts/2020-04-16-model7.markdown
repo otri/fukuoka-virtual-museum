@@ -1,10 +1,15 @@
 ---
 layout: modelviewer
-title:  "Model7"
+title:  "朱塗合子形兜・黒糸威胴丸具足　小具足付"
 date:   2020-04-16 14:06:30 +0900
 categories: monocle photogrammetry
 poster: /assets/models/Model7.jpg
 glb: /assets/models/Model7.glb
 usdz: /assets/models/Model7.usdz
 ---
-Samaurai armour.
+大河ドラマ「軍師官兵衛」（2014年放送）でお馴染み，黒田官兵衛（孝高，如水　1546～1604）の鎧兜です。官兵衛は，福岡藩の初代藩主・黒田長政（1568～1623）の父です。
+兜は，朱塗りの杯を伏せた形です。
+
+鎧は，官兵衛が使ったものと伝えられていますが，兜は，三代藩主の光之（官兵衛のひ孫　1628～1707）が作らせたものだということです。
+
+*大福岡城展（10月8日～11月29日）で展示予定
