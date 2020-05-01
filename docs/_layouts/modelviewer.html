@@ -53,8 +53,8 @@
   <babylon id="babylon-viewer" model="{{ page.glb | relative_url }}" templates.main.params.fill-screen="true" thumbnail="{{ page.poster | relative_url }}">
   </babylon>
   <div class="arvr_container_lower_left">
-    <a id="open-in-ar" rel="ar" href="{{ page.usdz | relative_url }}" style="position: relative; left:-39px; bottom:-25px; display: none;"><img src="/assets/images/ARKit-Badge.png" srcset="/assets/images/ARKit-Badge.png 1x, /assets/images/ARKit-Badge@2x.png 2x, /assets/images/ARKit-Badge@3x.png 3x" /></a>
-    {% comment %} <a id="open-in-vr"><img src="/assets/images/VR-Badge.png" srcset="/assets/images/VR-Badge.png 1x, /assets/images/VR-Badge@2x.png 2x, /assets/images/VR-Badge@3x.png 3x" /></a> {% endcomment %}
+    <a id="open-in-ar" rel="ar" href="{{ page.usdz | relative_url }}" style="position: relative; left:-39px; bottom:-25px; display: none;"><img src="{{ site.baseurl }}/assets/images/ARKit-Badge.png" srcset="{{ site.baseurl }}/assets/images/ARKit-Badge.png 1x, {{ site.baseurl }}/assets/images/ARKit-Badge@2x.png 2x, {{ site.baseurl }}/assets/images/ARKit-Badge@3x.png 3x" /></a>
+    {% comment %} <a id="open-in-vr"><img src="{{ site.baseurl }}/assets/images/VR-Badge.png" srcset="{{ site.baseurl }}/assets/images/VR-Badge.png 1x, {{ site.baseurl }}/assets/images/VR-Badge@2x.png 2x, {{ site.baseurl }}/assets/images/VR-Badge@3x.png 3x" /></a> {% endcomment %}
   </div>
   <script>
   // Check if AR is available.
