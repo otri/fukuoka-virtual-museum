@@ -18,6 +18,7 @@
     </script>
     <!-- For all browsers -->
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
 
     <!--[if IE]>
       <style>
@@ -49,10 +50,25 @@
     {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">{% endif %}
     {% if page.last_modified_at %}<meta itemprop="dateModified" content="{{ page.last_modified_at | date_to_xmlschema }}">{% endif %}
   </article>
-  <babylon id="babylon-viewer" model="{{ page.glb | relative_url }}" templates.main.params.fill-screen="true" vr="true" templates.nav-bar.params.hide-vr="false">
-    <vr>
-    </vr>
+  <babylon id="babylon-viewer" model="{{ page.glb | relative_url }}" templates.main.params.fill-screen="true" thumbnail="{{ page.poster | relative_url }}">
   </babylon>
-  <script src="https://preview.babylonjs.com/viewer/babylon.viewer.js"></script>
+  <div class="arvr_container_lower_left">
+    <a id="open-in-ar" rel="ar" href="{{ page.usdz | relative_url }}" style="position: relative; left:-39px; bottom:-25px; display: none;"><img src="/assets/images/ARKit-Badge.png" srcset="/assets/images/ARKit-Badge.png 1x, /assets/images/ARKit-Badge@2x.png 2x, /assets/images/ARKit-Badge@3x.png 3x" /></a>
+    {% comment %} <a id="open-in-vr"><img src="/assets/images/VR-Badge.png" srcset="/assets/images/VR-Badge.png 1x, /assets/images/VR-Badge@2x.png 2x, /assets/images/VR-Badge@3x.png 3x" /></a> {% endcomment %}
+  </div>
+  <script>
+  // Check if AR is available.
+  var isARAvailable = function() {
+    const a = document.createElement("a");
+    return a.relList.supports("ar");
+  }
+
+  if(isARAvailable()) {
+    // AR available, so show the AR link
+    var arElement = document.getElementById("open-in-ar");
+    arElement.style.display = "flex";
+  }
+</script>
+  <script src="/assets/js/babylon.viewer.js"></script>
 </body>
 </html>

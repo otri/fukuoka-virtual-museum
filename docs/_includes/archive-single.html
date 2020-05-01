@@ -17,16 +17,9 @@
         <img src="{{ teaser | relative_url }}" alt="">
       </div>
     {% endif %}
-    <h2 class="archive__item-title nonarlink" itemprop="headline">
+    <h2 class="archive__item-title" itemprop="headline">
       <figure>
       <a href="{{ post.url | relative_url }}"><img src="{{ post.poster | relative_url }}" class="align-left" />{{ title }}</a>
-      <figcaption>※3D画像は画像をクリックすると見ることができます（外部リンク）</figcaption>
-      </figure>
-    </h2>
-
-    <h2 class="archive__item-title arlink" itemprop="headline">
-      <figure>
-      <a rel="ar" href="{{ post.usdz | relative_url }}"><img src="{{ post.poster | relative_url }}" class="align-left" />{{ title }}</a>
       <figcaption>※3D画像は画像をクリックすると見ることができます（外部リンク）</figcaption>
       </figure>
     </h2>
