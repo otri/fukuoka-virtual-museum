@@ -13,3 +13,13 @@
     z-index: 100;
 }
 
+// Offset the button, so it fits where we intended.
+#open-in-ar a {
+    position: relative;
+    left:-39px;
+    bottom:-25px;
+}
+
+.static-loading-image {
+    z-index: -1;
+}
