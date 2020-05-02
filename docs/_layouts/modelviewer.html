@@ -79,7 +79,7 @@
     if( vrSupported ) {
       var viewer = document.getElementById("babylon-viewer");
       viewer.innerHTML = "<VR></VR>" + viewer.innerHTML;
-      viewer.templates.navBar.hideVr=false;
+      viewer.setAttribute("templates.navBar.hideVr","false");
     }
   </script>
   <script src="{{ site.baseurl }}/assets/js/babylon.viewer.js"></script>
