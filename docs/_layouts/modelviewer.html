@@ -18,6 +18,7 @@
     </script>
     <!-- For all browsers -->
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
 
     <!--[if IE]>
       <style>
@@ -49,10 +50,48 @@
     {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">{% endif %}
     {% if page.last_modified_at %}<meta itemprop="dateModified" content="{{ page.last_modified_at | date_to_xmlschema }}">{% endif %}
   </article>
-  <babylon id="babylon-viewer" model="{{ page.glb | relative_url }}" templates.main.params.fill-screen="true" vr="true" templates.nav-bar.params.hide-vr="false">
-    <vr>
-    </vr>
+  <babylon id="babylon-viewer" model="{{ page.glb | relative_url }}" thumbnail="{{ page.poster | relative_url }}" configuration="{{ site.baseurl }}/assets/viewerConfig.json">
+    <templates>
+      <loading-screen><params background-color="#A0A0A0" static-loading-image="{{ page.poster | relative_url }}"></params></loading-screen>
+    </templates>
   </babylon>
-  <script src="https://preview.babylonjs.com/viewer/babylon.viewer.js"></script>
+  <div id="open-in-ar"></div>
+  <script>
+    // Check if AR is available.
+    var isARAvailable = function() {
+      const a = document.createElement("a");
+      return a.relList.supports("ar");
+    }
+
+    if(isARAvailable()) {
+      // AR available, so show the AR link
+      var openinarElement = document.getElementById("open-in-ar");
+      openinarElement.className="arvr_container_lower_left";
+      openinarElement.innerHTML = `
+        <a rel='ar' href='{{ page.usdz | relative_url }}'>
+          <img src="{{ site.baseurl }}/assets/images/ARKit-Badge.png"
+               srcset="{{ site.baseurl }}/assets/images/ARKit-Badge.png 1x, {{ site.baseurl }}/assets/images/ARKit-Badge@2x.png 2x, {{ site.baseurl }}/assets/images/ARKit-Badge@3x.png 3x" />
+        </a>
+      `;
+    }
+
+    var vrSupported = 'getVRDisplays' in navigator;
+    if( vrSupported ) {
+      var viewer = document.getElementById("babylon-viewer");
+      viewer.innerHTML = "<VR></VR>" + viewer.innerHTML;
+      viewer.setAttribute("templates.nav-bar.params.hide-vr","false");
+    }
+  </script>
+  <script src="{{ site.baseurl }}/assets/js/babylon.viewer.js"></script>
+{% comment %} 
+  <script>
+    BabylonViewer.viewerManager.getViewerPromiseById('babylon-viewer').then(function(viewer) {
+      viewer.createDefaultXRExperienceAsync();
+      viewer.onEngineInitObservable.add(function(scene) {
+        // TODO: Can we determine if WebXR is properly enabled, and show the button?
+      });
+    });
+  </script>
+{% endcomment %}
 </body>
 </html>

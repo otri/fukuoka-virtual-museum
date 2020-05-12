@@ -2,3 +2,24 @@
 ---
 
 @import "minimal-mistakes/skins/default";
+
+// AR Container wraps the AR Button link, so it's absolute coordinate referenced to the lower-left screen.
+.arvr_container_lower_left {
+    position: fixed;
+    bottom: 2em;
+    left: 2em;
+    width: 148px;
+    height: 78px;
+    z-index: 100;
+}
+
+// Offset the button, so it fits where we intended.
+#open-in-ar a {
+    position: relative;
+    left:-39px;
+    bottom:-25px;
+}
+
+.static-loading-image {
+    z-index: -1;
+}

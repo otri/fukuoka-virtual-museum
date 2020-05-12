@@ -1,8 +1,14 @@
 {
+    "extends": "default",
     "templates": {
+        "main": {
+            "params": {
+                "fillScreen": true
+            }
+        },
         "navBar": {
             "params": {
-                "hideVr": false
+                "hideLogo": true
             }
         }
     }
