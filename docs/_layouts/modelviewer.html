@@ -83,13 +83,6 @@
         </a>
       `;
     }
-
-    var vrSupported = 'getVRDisplays' in navigator;
-    if( vrSupported ) {
-      var viewer = document.getElementById("babylon-viewer");
-      viewer.innerHTML = "<VR></VR>" + viewer.innerHTML;
-      viewer.setAttribute("templates.nav-bar.params.hide-vr","false");
-    }
   </script>
 </body>
 </html>
