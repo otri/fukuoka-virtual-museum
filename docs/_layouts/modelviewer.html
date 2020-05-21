@@ -58,10 +58,39 @@
    poster="{{ page.poster | relative_url }}"
    alt="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}"
    ar
+   quick-look-browsers="safari chrome"
    skybox-image="{{ '/assets/images/studio_small_03.hdr' | relative_url }}"
    shadow-intensity="1"
    shadow-softness="0.75"
-   auto-rotate camera-controls>
+   auto-rotate camera-controls
+   >
    </model-viewer>
+  <div id="open-in-ar"></div>
+  <script>
+    // Check if AR is available.
+    var isARAvailable = function() {
+      const a = document.createElement("a");
+      return a.relList.supports("ar");
+    }
+
+    if(isARAvailable()) {
+      // AR available, so show the AR link
+      var openinarElement = document.getElementById("open-in-ar");
+      openinarElement.className="arvr_container_lower_left";
+      openinarElement.innerHTML = `
+        <a rel='ar' href='{{ page.usdz | relative_url }}'>
+          <img src="{{ site.baseurl }}/assets/images/ARKit-Badge.png"
+               srcset="{{ site.baseurl }}/assets/images/ARKit-Badge.png 1x, {{ site.baseurl }}/assets/images/ARKit-Badge@2x.png 2x, {{ site.baseurl }}/assets/images/ARKit-Badge@3x.png 3x" />
+        </a>
+      `;
+    }
+
+    var vrSupported = 'getVRDisplays' in navigator;
+    if( vrSupported ) {
+      var viewer = document.getElementById("babylon-viewer");
+      viewer.innerHTML = "<VR></VR>" + viewer.innerHTML;
+      viewer.setAttribute("templates.nav-bar.params.hide-vr","false");
+    }
+  </script>
 </body>
 </html>
