@@ -57,7 +57,7 @@
    ios-src="{{ page.usdz | relative_url }}"
    poster="{{ page.poster | relative_url }}"
    alt="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}"
-   ar
+   ar ar-modes="webxr scene-viewer quick-look fallback"
    skybox-image="{{ '/assets/images/studio_small_03.hdr' | relative_url }}"
    shadow-intensity="1"
    shadow-softness="0.75"
