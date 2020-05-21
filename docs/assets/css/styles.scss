@@ -3,6 +3,12 @@
 
 @import "minimal-mistakes/skins/default";
 
+#modelviewer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
 // AR Container wraps the AR Button link, so it's absolute coordinate referenced to the lower-left screen.
 .arvr_container_lower_left {
     position: fixed;
