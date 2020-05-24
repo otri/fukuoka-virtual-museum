@@ -80,11 +80,25 @@
       progress.classList.toggle('show', totalProgress < 1);
       bar.style.transform = `scaleX(${totalProgress})`;
     });
+  </script>
 
-    const arButton = document.querySelector("button[name='ar-button']");
-    arButton.ontouchend = (e) => {
-      e.preventDefault();
+  <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-analytics.js"></script>
+
+  <script>
+    var firebaseConfig = {
+      apiKey: "AIzaSyD7PgnsqR_aQIl63jHCitdDnkdXro_DYbk",
+      authDomain: "fukuoka-virtual-museum.firebaseapp.com",
+      databaseURL: "https://fukuoka-virtual-museum.firebaseio.com",
+      projectId: "fukuoka-virtual-museum",
+      storageBucket: "fukuoka-virtual-museum.appspot.com",
+      messagingSenderId: "94947431422",
+      appId: "1:94947431422:web:4d07339d354a0ee68666af",
+      measurementId: "G-8622H48448"
     };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
   </script>
 </body>
 </html>
