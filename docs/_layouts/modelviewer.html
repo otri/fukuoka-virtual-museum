@@ -78,6 +78,11 @@
       progress.classList.toggle('show', totalProgress < 1);
       bar.style.transform = `scaleX(${totalProgress})`;
     });
+
+    const arButton = document.querySelector("button[name='ar-button']");
+    arButton.ontouchend = (e) => {
+      e.preventDefault();
+    };
   </script>
 </body>
 </html>
