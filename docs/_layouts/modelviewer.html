@@ -11,7 +11,7 @@
     <link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
 
     <!-- https://t.co/dKP3o1e -->
-    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1, viewport-fit=cover">
 
     <script>
       document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
@@ -58,31 +58,26 @@
    poster="{{ page.poster | relative_url }}"
    alt="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}"
    ar ar-modes="webxr scene-viewer quick-look fallback"
+   quick-look-browsers="safari chrome"
    skybox-image="{{ '/assets/images/studio_small_03.hdr' | relative_url }}"
    shadow-intensity="1"
    shadow-softness="0.75"
-   auto-rotate camera-controls
-   >
+   auto-rotate camera-controls>
+  <button slot="ar-button">AR 🤳</button>
+  <div id="progress" slot="progress-bar">
+    <div class="bar"></div>
+  </div>
    </model-viewer>
-  <div id="open-in-ar"></div>
-  <script>
-    // Check if AR is available.
-    var isARAvailable = function() {
-      const a = document.createElement("a");
-      return a.relList.supports("ar");
-    }
-
-    if(isARAvailable()) {
-      // AR available, so show the AR link
-      var openinarElement = document.getElementById("open-in-ar");
-      openinarElement.className="arvr_container_lower_left";
-      openinarElement.innerHTML = `
-        <a rel='ar' href='{{ page.usdz | relative_url }}'>
-          <img src="{{ site.baseurl }}/assets/images/ARKit-Badge.png"
-               srcset="{{ site.baseurl }}/assets/images/ARKit-Badge.png 1x, {{ site.baseurl }}/assets/images/ARKit-Badge@2x.png 2x, {{ site.baseurl }}/assets/images/ARKit-Badge@3x.png 3x" />
-        </a>
-      `;
-    }
+   <script>
+    const modelViewer = document.querySelector('model-viewer');
+    const progress = document.querySelector('#progress');
+    const bar = progress.querySelector('.bar');
+  
+    modelViewer.addEventListener('progress', (event) => {
+      const {totalProgress} = event.detail;
+      progress.classList.toggle('show', totalProgress < 1);
+      bar.style.transform = `scaleX(${totalProgress})`;
+    });
   </script>
 </body>
 </html>

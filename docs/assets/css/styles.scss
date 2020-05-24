@@ -9,23 +9,39 @@
     --poster-color: #999;
 }
 
-// AR Container wraps the AR Button link, so it's absolute coordinate referenced to the lower-left screen.
-.arvr_container_lower_left {
-    position: fixed;
-    bottom: 2em;
-    left: 2em;
-    width: 148px;
-    height: 78px;
-    z-index: 100;
+button[slot="ar-button"] {
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    height: 44px;
 }
 
-// Offset the button, so it fits where we intended.
-#open-in-ar a {
-    position: relative;
-    left:-39px;
-    bottom:-25px;
+#progress {
+    position: absolute;
+    width: calc(100% / 3);
+    height: 10px;
+    color: rgba(255, 255, 255, 0.75);
+    box-shadow: 0px 0px 8px 6px rgba(0, 0, 0, 0.25);
+    border: 2px solid currentColor;
+    border-radius: 10px;
+    top: calc(50% - 5px);
+    left: calc(50% - 100% / 6);
+    opacity: 0;
+    transition: opacity 0.3s 0.3s;
 }
 
-.static-loading-image {
-    z-index: -1;
+#progress.show {
+    transition-delay: 0s;
+    opacity: 1;
+}
+
+#progress > .bar {
+    width: 100%;
+    height: 100%;
+    background-color: currentColor;
+    transform-origin: top left;
+    transform: scaleX(0);
 }
