@@ -23,6 +23,28 @@ button[slot="ar-button"] {
     border: none;
 }
 
+#about-client {
+    position: fixed;
+    top: calc(16px + env(safe-area-inset-top));
+    left: calc(16px + env(safe-area-inset-left));
+}
+
+#about-client img {
+    max-height: 44px;
+    width: auto;
+}
+
+#about-steampunkdigital {
+    position: fixed;
+    bottom: calc(8px + env(safe-area-inset-bottom));
+    left: calc(16px + env(safe-area-inset-left));
+}
+
+#about-steampunkdigital img {
+    max-height: 36px;
+    width: auto;
+}
+
 #progress {
     position: absolute;
     width: calc(100% / 3);

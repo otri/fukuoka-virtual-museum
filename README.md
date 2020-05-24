@@ -1,6 +1,11 @@
 Fukuoka Museum Virtual Gallery
 =
 
+Usage Rights from Hashimoto-san of Fukuoka City about the scanned 3D scan data:
+・ Fukuoka City Museum and Steampunk Digital can use this scanned 3D data.
+When used by Steampunk Digital, we have to display the 3D data with "福岡市博物館所蔵".
+・ Do not provide to any third party.
+
 Development Preparation
 -----------------------
 
